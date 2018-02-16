@@ -1,5 +1,6 @@
 package fr.Florent59.StopEnchant;
 
+import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.craftbukkit.libs.jline.internal.Log;
 import org.bukkit.entity.Player;
@@ -17,6 +18,12 @@ public class BloquerEnchant implements Listener {
 		e.setCancelled(true);
 		p.sendMessage("Vous n'avez pas l'autorisation d'enchanter !");
 		Log.info(p.getName()+ " a essayé d'enchanter !");
+		
+		for(Player onlinePlayer : Bukkit.getOnlinePlayers()){
+			if(onlinePlayer.isOp())
+				onlinePlayer.sendMessage(p.getName()+" a essayé d'enchanter !");
+		}
+		
 		}
 		
 	}
