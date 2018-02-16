@@ -14,6 +14,7 @@ public class BloquerEnchant implements Listener {
 		Player p = e.getEnchanter();
 		if(!p.isOp() || p.getGameMode().equals(GameMode.CREATIVE)){
 		e.setCancelled(true);
+		p.sendMessage("Vous n'avez pas l'autorisation d'enchanter !");
 		}
 		
 	}
