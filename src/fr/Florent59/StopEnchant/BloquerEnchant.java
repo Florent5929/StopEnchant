@@ -12,7 +12,7 @@ public class BloquerEnchant implements Listener {
 	@EventHandler (priority = EventPriority.LOW)
 	public void QuandUnItemEstEnchant(EnchantItemEvent e){
 		Player p = e.getEnchanter();
-		if(!p.isOp() || p.getGameMode().equals(GameMode.CREATIVE)){
+		if(!p.isOp() && !p.getGameMode().equals(GameMode.CREATIVE)){
 		e.setCancelled(true);
 		p.sendMessage("Vous n'avez pas l'autorisation d'enchanter !");
 		}
