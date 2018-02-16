@@ -1,0 +1,5 @@
+name: fr_Florent59_StopEnchant
+main: fr.Florent59.StopEnchant.main
+version: 1.12.2
+description: Annule l'enchantement d'un item via la table d'enchantement, sauf si le joueur est un operateur.
+author: Florent59
