@@ -1,2 +1,2 @@
 # StopEnchant
-Empêche d'enchanter sauf si le joueur est un opérateur.
+Ce plugin pour le jeu minecraft empêche le joueur d'enchanter s'il n'est ni opérateur ni en gamemode créatif.
